@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 06, 2021 at 11:10 AM
+-- Generation Time: Jul 07, 2021 at 06:49 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.5
 
@@ -7719,18 +7719,18 @@ CREATE TABLE `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`id_category`, `category_name`, `category_description`, `category_image`, `is_seen`) VALUES
-(3, 'Buku', '', 'Category_Buku_24-06-21.jpg', 1),
-(4, 'Dapur', '', 'Category_Dapur_24-06-21.jpg', 1),
-(5, 'Handphone', '', 'Category_Handphone_24-06-21.jpg', 1),
+(3, 'Controller', '', 'controller.jpg', 1),
+(4, 'Penyimpanan Daya', '', 'daya.png', 1),
+(5, 'Motor', '', 'motor.jpg', 1),
 (6, 'Fashion', '', 'Category_Fashion_05-07-21.jpg', 1),
 (7, 'Elektronik', '', 'Category_Elektronik_24-06-21.jpg', 1),
 (8, 'Komputer', '', 'Category_Komputer_24-06-21.jpg', 1),
 (9, 'Mainan', '', 'Category_Mainan_24-06-21.jpg', 1),
 (10, 'Hobby', '', 'Category_Hobby_24-06-21.jpg', 1),
-(11, 'Stationary', '', 'Category_Stationary_24-06-21.jpg', 1),
-(12, 'Olahraga', '', 'Category_Olahraga_24-06-21.jpg', 1),
-(13, 'Otomotif', '', 'Category_Otomotif_24-06-21.jpg', 1),
-(14, 'Perawatan', '', 'Category_Perawatan_24-06-21.jpg', 1);
+(11, 'Tools', '', 'tools.jpg', 1),
+(12, 'Sensor', '', 'sensor.png', 1),
+(13, 'Kabel', '', 'kabel.jpg', 1),
+(14, 'Material', '', 'biomassa.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -7753,12 +7753,11 @@ CREATE TABLE `tbl_donasi` (
 --
 
 INSERT INTO `tbl_donasi` (`id_donasi`, `donasi_name`, `donasi_description`, `donasi_image`, `donasi_url`, `donasi_owner`, `is_seen`) VALUES
-(1, 'Beras untuk anak yatim', 'Beras untuk anak yatim', 'beras.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Aksi Cepat Tanggap', 1),
-(2, 'Sebar Al Quran di Indonesia', 'Sebar Al Quran di Indonesia', 'quran.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Ponpes Langitan', 1),
-(3, 'Makan gratis untuk anak jalanan', 'Makan gratis untuk anak jalanan', 'makan.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mari Berbagi', 1),
-(4, 'Buku gratis untuk panti asuhan', 'Buku gratis untuk panti asuhan', 'buku.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mari Berbagi', 1),
-(5, 'Sembako untku kaum lansia', 'Sembako untku kaum lansia', 'sembako.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Ponpes Langitan', 1),
-(6, 'Masker gratis untuk anak jalanan', 'Masker gratis untuk anak jalanan', 'masker.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mari Berbagi', 1);
+(1, 'Terangkan desa Nano NTT, dengan PLTA', 'Terangkan Desa Nano, NTT,      dengan PLTA', 'plta.jpeg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Gerakan Masyarakat', 1),
+(2, 'PLTS untuk desa Sukaraksa, Bogor', 'PLTS untuk desa Sukaraksa, Bogor', 'plts-bogor.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Peduli Negeri', 1),
+(4, 'PLTM untuk desa Puncu, Kediri', 'PLTM untuk desa Puncu, Kediri', 'pltm-kediri.jpeg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mandiri Energi', 1),
+(5, 'PLT Mikrohidro Singosaren, Yogyakarta', 'PLT Mikrohidro Singosaren, Yogyakarta', 'mikrohidro.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mandiri Energi', 1),
+(6, 'Listriki Desa Wineru dengan PLTS', 'Listriki Desa Wineru dengan PLTS', 'panel.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Peduli Negeri', 1);
 
 -- --------------------------------------------------------
 
@@ -7782,11 +7781,11 @@ CREATE TABLE `tbl_olshop` (
 --
 
 INSERT INTO `tbl_olshop` (`id_olshop`, `id_user`, `province_id`, `city_id`, `subdistrict_id`, `olshop_name`, `olshop_image`, `created_at`) VALUES
-(1, 2, 6, 152, 2098, 'Buah dan Sayur Berkah', 'fresh-fruit-logo-design-mascot_157713-4.jpg', '2020-10-26'),
-(2, 1, 6, 152, 2098, 'Toko Sayur Ibu', 'fruit-vegetables-logo_7085-159.jpg', '2020-10-08'),
-(14, 3, 6, 152, 2098, 'Gramedia', 'Gramedia_logo.png', '2020-10-26'),
+(1, 2, 6, 152, 2098, 'Tools.id', 'toolsid1.png', '2020-10-26'),
+(2, 1, 6, 152, 2098, 'Hari Store', 'haristore1.jpg', '2020-10-08'),
 (15, 12, 6, 152, 2098, 'Logitech Official', 'Gambar_Logitech_Official.jpg', '2021-07-05'),
-(16, 13, 6, 152, 2098, 'Fantech Official', 'Gambar_Fantech_Official.jpg', '2021-07-05');
+(16, 13, 6, 152, 2098, 'Fantech Official', 'Gambar_Fantech_Official.jpg', '2021-07-05'),
+(18, 14, 6, 152, 2098, 'Starlectric', 'Gambar_Starlectric.png', '2021-07-06');
 
 -- --------------------------------------------------------
 
@@ -7811,23 +7810,26 @@ CREATE TABLE `tbl_product` (
 --
 
 INSERT INTO `tbl_product` (`id_product`, `id_olshop`, `id_category`, `product_name`, `product_image`, `product_price`, `product_description`, `is_seen`, `date_update`) VALUES
-(1, 1, 4, 'Jeruk', 'Product_Jeruk_24-06-21.jpg', 11500, 'Jeruk', 1, '2021-07-06 03:42:06'),
-(2, 1, 4, 'Apel', 'Product_Apel_24-06-211.jpg', 14500, 'Apel', 1, '2021-06-24 11:10:00'),
-(3, 2, 4, 'Nanas', 'Product_Nanas_24-06-21.jpg', 19000, 'Nanas', 1, '2021-07-06 03:38:40'),
-(4, 2, 4, 'Apel', 'Product_Apel_24-06-21.jpg', 15000, 'Apel merah harga per kilo', 1, '2021-06-24 10:50:34'),
-(5, 14, 3, 'Buku Pelajaran', 'Product_Buku_Pelajaran_24-06-21.jpg', 50000, 'Buku Pelajaran', 1, '2021-06-24 12:30:20'),
-(6, 14, 3, 'Novel', 'Product_Novel_24-06-21.jpg', 60000, 'Novel', 1, '2021-06-24 12:29:38'),
-(7, 2, 4, 'Jeruk', 'Product_Jeruk.jpg', 12500, 'Jeruk', 1, '2021-06-24 11:01:10'),
-(8, 2, 4, 'Alpukat', 'Product_Alpukat.jpg', 8000, 'Alpukat', 1, '2021-06-24 11:02:47'),
-(10, 2, 4, 'Lemon', 'Product_Lemon1.jpg', 17500, 'Lemon', 1, '2021-06-24 11:08:49'),
-(11, 1, 4, 'Lemon', 'Product_Lemon2.jpg', 18500, 'Lemon', 1, '2021-06-24 11:15:31'),
-(12, 2, 4, 'Semangka', 'Product_Semangka.jpg', 20000, 'semangka', 1, '2021-07-05 13:36:23'),
-(13, 1, 4, 'Semangka', 'Product_Semangka1.jpg', 19000, 'semangka', 1, '2021-07-06 03:44:33'),
-(14, 1, 4, 'Nanas', 'Product_Nanas.jpg', 21000, 'nanas', 1, '2021-07-05 13:41:27'),
 (15, 15, 8, 'Mouse', 'Product_Mouse4.jpg', 72000, 'mouse logitech g210', 1, '2021-07-06 03:35:42'),
 (16, 15, 8, 'Keyboard', 'Product_Keyboard.jpg', 380000, 'Keyboard logitech G Pro', 1, '2021-07-06 03:34:14'),
 (17, 16, 8, 'Keyboard', 'Product_Keyboard1.jpg', 385000, 'Keyboard fantech maxpower', 1, '2021-07-05 14:00:03'),
-(18, 16, 8, 'Mouse', 'Product_Mouse10.jpg', 74000, 'Mouse fantech x9 thor', 1, '2021-07-06 03:34:32');
+(18, 16, 8, 'Mouse', 'Product_Mouse10.jpg', 74000, 'Mouse fantech x9 thor', 1, '2021-07-06 03:34:32'),
+(19, 2, 3, 'Arduino R3', 'Product_Arduino.jpg', 62000, 'Arduino Uno R3 - Arduino Uno Complatible Atmega328p CH340', 1, '2021-07-06 18:31:58'),
+(20, 2, 3, 'Arduino R3 starter paket dasar', 'Product_Arduino_R3.jpg', 65000, 'arduino Uno R3 compatible starter paket dasar', 1, '2021-07-06 18:37:58'),
+(21, 2, 12, 'Sensor LDR', 'Product_Sensor_LDR.jpg', 13000, 'sensor ldr', 1, '2021-07-06 18:41:04'),
+(22, 1, 11, 'Solder', 'Product_Solder.jpg', 45000, 'solder', 1, '2021-07-06 18:45:40'),
+(23, 1, 11, 'Bor Obeng Cordless', 'Product_Bor_Obeng_Cordless.jpg', 281000, 'Black + Decker Bor Obeng Cordless Screwdriver 4.8V (KC4815-B1)', 1, '2021-07-06 18:49:21'),
+(24, 18, 13, 'Kabel NYM', 'Product_Kabel_NYM2.jpg', 120000, 'kabel nym', 1, '2021-07-06 19:22:00'),
+(25, 18, 13, 'Kabel NYY', 'Product_Kabel_NYY.jpg', 125000, 'Kabel nyy 4 x 10 m', 1, '2021-07-06 19:24:00'),
+(26, 18, 4, 'Super Kapasitor', 'Product_Super_Kapasitor.jpg', 85000, 'Super Kapasitor capacitor - High Quality 2.7V 500F', 1, '2021-07-06 19:29:48'),
+(27, 18, 12, 'Sensor Kelembapan Suhu', 'Product_Sensor_Kelembapan_Suhu.jpg', 19500, 'Sensor Suhu DHT11', 1, '2021-07-06 19:31:25'),
+(28, 18, 12, 'Sensor LDR', 'Product_Sensor_LDR1.jpg', 14500, 'Sensor LDR', 1, '2021-07-06 19:34:32'),
+(29, 2, 4, 'Batrai 18650', 'Product_Batrai_18650.jpg', 20500, 'Baterai/Battery/Batre/Batrai 18650 kapaitas 2900-3400 mAh', 1, '2021-07-06 19:38:35'),
+(30, 2, 14, 'Sekam padi', 'Product_Sekam_padi.jpg', 7500, 'sekam padi mentah', 1, '2021-07-06 19:42:10'),
+(31, 2, 14, 'Sekam Bakar', 'Product_Sekam_Bakar_06-07-21.jpg', 4500, 'sekam bakar', 1, '2021-07-06 19:45:38'),
+(32, 2, 5, 'Motor Servo mini genertor 38V', 'Product_Servo_Motor_Listrik_38V.jpg', 150000, 'Hitachi DC Brushless Servo Motor BLDC Mini Generator Motor Listrik 38V', 1, '2021-07-07 00:39:30'),
+(33, 18, 5, 'Motor Servo S3003', 'Product_Motor_Servo_S3003.jpg', 45500, 'Futaba S3003 Servo Servo / Motor Servo S3003', 1, '2021-07-07 00:42:35'),
+(34, 2, 4, 'Super Kapasitor', 'Product_Super_Kapasitor1.jpg', 72000, 'Super Kapasitor capacitor 2.7V, ultra capacitor kapasitor 2.7V 500F', 1, '2021-07-07 00:48:29');
 
 -- --------------------------------------------------------
 
@@ -7886,10 +7888,10 @@ CREATE TABLE `tbl_slide` (
 --
 
 INSERT INTO `tbl_slide` (`id_slide`, `slide_title`, `slide_description`, `slide_image`, `is_seen`, `date_update`) VALUES
-(1, 'Shoes', 'Shoes', 'Slide_Shopping_24-06-217.jpg', 1, '2021-06-24 10:02:17'),
-(2, 'Suti', 'Suti', 'Slide_Suti_24-06-21.jpg', 1, '2021-06-24 10:03:19'),
-(3, 'Vegetable', 'Vegetable', 'Slide_Vegetable_24-06-21.jpg', 1, '2021-06-24 10:04:35'),
-(4, 'Cosmetics', 'Cosmetics', 'Slide_Cosmetics_24-06-21.jpg', 1, '2021-06-24 10:09:34');
+(1, 'Sensor', 'Sensor', 'Slide_Sensor_07-07-21.jpg', 1, '2021-07-07 02:58:08'),
+(2, 'Controller', 'Controller', 'Slide_Controller_07-07-21.jpg', 1, '2021-07-07 02:59:08'),
+(3, 'Sensor', 'Sensor', 'Slide_Sensor_07-07-211.jpg', 1, '2021-07-07 03:03:38'),
+(4, 'Controller', 'Controller', 'Slide_Controller_07-07-21.jpg', 0, '2021-07-07 03:03:46');
 
 -- --------------------------------------------------------
 
@@ -7913,12 +7915,12 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `full_name`, `username`, `email`, `password`, `no_phone`, `id_role`, `status`) VALUES
-(1, 'Owner Toko Sayur Ibu', 'tokosayuribu', 'tokosayuribu@gmail.com', '6c1d93e6c488aa327fb06c1917b8d637', '085655312333', 2, 1),
-(2, 'Owner Buah dan Sayur Berkah', 'buahdansayurberkah', 'buahdansayurberkah@gmail.com', 'da91fecca549972b1afc6f50b83a22a8', '085655312333', 2, 1),
-(3, 'Owner Gramedia', 'gramedia', 'gramedia@gmail.com', 'b942284f4b218e0c3953481310a0877f', '085655312333', 2, 1),
+(1, 'Hari Store', 'haristore', 'haristore@gmail.com', '56ab5fa14f427e4c99c7f50fcd6e8772', '085655312333', 2, 1),
+(2, 'Tools.id', 'tools.id', 'toolsid@gmail.com', '4a931512ce65bdc9ca6808adf92d8783', '085655312333', 2, 1),
 (4, 'super admin', 'superadmin', 'superadmin@gmail.com', '17c4520f6cfd1ab53d8745e84681eb49', '085655312333', 1, 1),
 (12, 'Owner Logitech Official', 'logitech', 'logitechofficial@gmail.com', 'e484c7843b4d1a4bc3c6c6851cb4ed40', '085655312333', 2, 1),
-(13, 'Owner Fantech Official', 'fantech', 'fantechofficial@gmail.com', '7293684594a17688e42ef1e285598a10', '085655312333', 2, 1);
+(13, 'Owner Fantech Official', 'fantech', 'fantechofficial@gmail.com', '7293684594a17688e42ef1e285598a10', '085655312333', 2, 1),
+(14, 'Starlectric', 'starlectric', 'starlectric@gmail.com', '251d243ccd52149a8d0a6192ec46d608', '085655312333', 2, 1);
 
 -- --------------------------------------------------------
 
@@ -7941,14 +7943,14 @@ CREATE TABLE `tbl_video` (
 --
 
 INSERT INTO `tbl_video` (`id_video`, `video_name`, `video_description`, `video_image`, `video_url`, `video_owner`, `is_seen`) VALUES
-(1, 'Cara memasak roti yang mudah dan murah', 'Cara memasak roti yang mudan dan murah untuk anak kos', 'baking.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Anak Kos', 1),
-(2, 'Mengajari anak cara berhitung', 'Mengajari anak cara berhitung', 'child.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Ibu Pintar', 1),
-(3, 'Makan enak ala anak kos', 'Makan enak ala anak kos', 'cooking.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Anak Kos', 1),
-(4, 'Tetap sehat di masa pandemi', 'Tetap sehat di masa pandemi', 'health.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Tips Sehat', 1),
-(5, 'Tutorial makeup wisuda murah', 'Tutorial makeup wisuda murah', 'makeup.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mahasiswa Cerdas', 1),
-(6, 'Cara cepat menghapal rumus matematika', 'Cara cepat menghapal rumus matematika', 'math.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Mahasiswa Cerdas', 1),
-(7, 'Judul buku cocok untuk WFH ', 'Judul buku cocok untuk WFH ', 'reading.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Baim Channel', 1),
-(8, 'Cara bekerja sekaligus jalan-jalan', 'Cara bekerja sekaligus jalan-jalan', 'traveling.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Baim Channel', 1);
+(1, 'Pembangkit listrik miniAC 3 FHASA', 'Membuat pembangkit listrik MINI AC 3 FHASA', 'miniac.JPG', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Gio Kabayan', 1),
+(2, 'Merakit Listrik tenaga surya|pemula', 'Merakit Listrik tenaga surya|pemula', 'plts.JPG', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Builder ID', 1),
+(3, 'Membuat pembangkit listrik12v sederhana', 'Membuat pembangkit listrik12v sederhana', '12volt.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Bang Ajhoz', 1),
+(4, 'Cara buat generator murah meriah', 'Cara buat generator murah meriah', 'generator.JPG', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'A Begeg', 1),
+(5, 'PLTU mini sederhana dari barang bekas', 'PLTU mini sederhana dari barang bekas', 'pltu-mini.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Kerajinan Unik', 1),
+(6, 'Turbin pembangkit listrik mini', 'Turbin pembangkit listrik mini', 'turbin-mini.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Rain City Channel', 1),
+(7, 'Membuat PLTA sederhana', 'Membuat PLTA sederhana', 'plta-sederhana.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'TOBIKIN', 1),
+(8, 'Membuat pembangkit listrik sederhana', 'Membuat pembangkit listrik sederhana', 'pembangkit-listrik.jpg', 'https://www.youtube.com/watch?v=Jo-lMJ0qO7c', 'Elevina Trick', 1);
 
 -- --------------------------------------------------------
 
@@ -8063,13 +8065,13 @@ ALTER TABLE `tbl_donasi`
 -- AUTO_INCREMENT for table `tbl_olshop`
 --
 ALTER TABLE `tbl_olshop`
-  MODIFY `id_olshop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_olshop` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
 --
 ALTER TABLE `tbl_product`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `tbl_role`
@@ -8093,7 +8095,7 @@ ALTER TABLE `tbl_slide`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_user` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tbl_video`
